@@ -16,8 +16,6 @@ form.addEventListener("submit", function (e) {
     let hasil
     let ket
     let totalBeban = parseInt(bebanGaji.value) + parseInt(bebanSewa.value) + parseInt(bebanPerlengkapan.value) + parseInt(bebanAlat.value)
-    console.log(totalBeban);
-
     if (totalBeban < parseInt(pendapatan.value)) {
         hasil = parseInt(pendapatan.value) - totalBeban
         ket = "laba"
